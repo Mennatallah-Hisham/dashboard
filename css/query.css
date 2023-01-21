@@ -1,0 +1,55 @@
+@media 
+(min-width:44em){
+    /* .analytics__card,
+    .card{
+        width:40rem;
+        margin-inline: auto;
+        padding:1rem;
+    } */
+
+.container{
+
+    max-width:min(100%,160rem);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns:auto 1fr;
+    column-gap:2rem;
+    
+ 
+    
+
+
+}
+
+}
+
+
+@media(min-width:77em){
+
+    .aside{
+        display: block;
+   
+    }
+    .aside--open,
+    .aside--close{
+        display: none;
+    }
+    .card{
+        width:30rem;
+        padding:1rem;
+        margin:0;
+    }
+    .container{
+
+    
+        display: grid;
+        grid-template-columns:20rem auto 1fr;
+        column-gap:2rem;
+        
+    
+    
+    }
+
+
+
+}

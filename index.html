@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/86ec296f97.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/query.css"/>
+    <title>dashboard</title>
+</head>
+<body>
+    <header class="header">
+      
+
+    
+            <h1 class="heading--primary">
+                dashboard
+            </h1>
+                <!-- <form class="form">
+                    <input
+                    class="form__input"
+                     type="date"
+                     aria-label="choose date"/>
+                </form> -->
+  <button class="themeToggler">
+    <i class="fas fa-adjust icon--mode"></i>
+  </button>
+            </header>
+ <!-- SIDEBAR -->
+           
+   
+      
+   <main class="main container">
+    <button class="aside--open"><i class="fas fa-bars icon--aside" ></i></button>
+    <aside class="aside hide">
+        <button class="aside--close">
+            
+            <i class="fas fa-times icon--aside"></i>
+        </button>
+        <ul class="aside__list">
+            <li class="aside__list__item active">
+                
+                    <i class="fas fa-th-large "></i>
+              
+                <a href="">dashboard</a>
+
+            </li>
+            <li class="aside__list__item">
+              
+                    <i class="far fa-user"></i>
+                
+                <a href="">users</a>
+
+            </li>
+
+            <li class="aside__list__item ">
+                <i class="fas fa-shopping-cart"></i>
+                <a href="">orders</a>
+
+            </li>
+            <li class="aside__list__item">
+              
+                <i class="fas fa-chart-line"></i>
+                
+                <a href="">analytics</a>
+
+            </li>
+            <li class="aside__list__item">
+              
+                <i class="far fa-envelope"></i>
+                
+                <a href="">messages</a>
+                <span class="msg-count">30</span>
+
+            </li>
+         
+            <li class="aside__list__item">
+              
+                <i class="far fa-sticky-note"></i>
+                <a href="">reports</a>
+
+            </li>
+            <li class="aside__list__item">
+                <i class="fas fa-plus"></i>
+                <a href="">add product</a>
+
+            </li>
+
+            <li class="aside__list__item">
+              
+                <i class="fas fa-cog"></i>
+                <a href="">settings</a>
+
+            </li>
+        </ul>
+    </aside>
+ 
+    <div class="middle">
+  
+    
+  
+    
+      <!--------- INSIGHTS------------>
+            <section class="insights">
+                <h2 class="heading--secondary">
+                    insights
+                </h2>
+                <div class="flex">
+    
+              
+                <!--------- SALES------------>
+                <article class="card">
+                    <div class="card__wrapper">
+                        <span class="card__icon">
+                            <i class="fas fa-chart-line"></i>
+                        </span>
+                        <h3 class="card__title">
+                            total sales
+                        </h3>
+                        <span class="card__number">
+                            $32,552
+                        </span>
+                        <span class="txt--muted">
+                            last 24 hrs
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <p class="progress__number">80%</p>
+                       <div class="progress__bar">
+                        <div class="bar bar--sales"></div>
+                       </div>
+                    </div>
+                  
+    
+    
+                </article>
+    
+                  <!--------- EXPENSES------------>
+    
+                  <article class="card">
+                    <div class="card__wrapper">
+                        <span class="card__icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </span>
+                        <h3 class="card__title">
+                            total expenses
+                        </h3>
+                        <span class="card__number">
+                            $12,552
+                        </span>
+                        <span class="txt--muted">
+                            last 24 hrs
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <p class="progress__number">65%</p>
+                       <div class="progress__bar">
+                        <div class="bar bar--expenses"></div>
+                       </div>
+                    </div>
+    
+    
+                </article>
+    
+                    <!--------- INCOME------------>
+                <article class="card">
+                    <div class="card__wrapper">
+                        <span class="card__icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </span>
+                        <h3 class="card__title">
+                            total income
+                        </h3>
+                        <span class="card__number">
+                            $22,552
+                        </span>
+                        <span class="txt--muted">
+                            last 24 hrs
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <p class="progress__number">50%</p>
+                       <div class="progress__bar">
+                        <div class="bar bar--income"></div>
+                       </div>
+                    </div>
+                  
+    
+    
+                </article>
+            </div>
+    
+            </section>
+    
+    
+    
+    
+    
+      <!---------Recent Orders------------>
+    
+      <section class="recent-orders mt-sm">
+        <h2 class="heading--secondary"> recent orders</h2>
+    <table class="table">
+        <thead class="table__head">
+            <tr>
+                <th>product name</th>
+                <th>product number</th>
+                <th>payment</th>
+                <th>status</th>
+                <th></th>
+    
+            </tr>
+        </thead>
+        <tbody class="table__body">
+            <tr>
+                <td>mint candle</td>
+                <td>23348</td>
+                <td>due</td>
+                <td class="warning">pending</td>
+                <td class="primary">details</td>
+            </tr>
+            <tr>
+                <td>mint candle</td>
+                <td>23348</td>
+                <td>due</td>
+                <td class="warning">pending</td>
+                <td class="primary">details</td>
+            </tr>
+            <tr>
+                <td>mint candle</td>
+                <td>23348</td>
+                <td>due</td>
+                <td class="warning">pending</td>
+                <td class="primary">details</td>
+            </tr>
+            <tr>
+                <td>mint candle</td>
+                <td>23348</td>
+                <td>due</td>
+                <td class="warning">pending</td>
+                <td class="primary">details</td>
+            </tr>
+            <tr>
+                <td>mint candle</td>
+                <td>23348</td>
+                <td>due</td>
+                <td class="warning">pending</td>
+                <td class="primary">details</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn--show">show all</button>
+      </section>
+    
+    
+    
+    </div>
+
+    <div class="right">
+
+ <!-- RECENT UPDATES -->
+           
+        <section class="recent-updates">
+            <h2 class="heading--secondary">
+                recent updates
+            </h2>
+
+            <div class="side-card">
+                <article class="card__update">
+                    <img src="./imgs/steve.jpg" alt="steve"/>
+                   <p><span class="name">steve</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.  doloremque inventore rerum.</p>
+
+                </article>
+                <article class="card__update">
+                    <img src="./imgs/hannah.jpg" alt="hannah"/>
+                   <p><span class="name">hannah</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente modi hic.</p>
+
+                </article>
+                <article class="card__update">
+                    <img src="./imgs/dave.jpg" alt="dave"/>
+
+                   <p><span class="name">dave </span> Sapiente modi hic, doloremque inventore rerum officiis.</p>
+
+                </article>
+            </div>
+
+
+        </section>
+ <!-- SALES ANALYTICS -->
+        <section class="sales-analytics">
+            <h2 class="heading--secondary">
+                sales analytics
+            </h2>
+           
+                <div class="analytics__card side-card">
+                
+                    <i class="fas fa-shopping-cart icon icon--success"></i>
+                    <p class="title">online orders
+                    </p>
+                    <span class="success">+45%</span>
+
+                    <span>28,410</span>
+
+                </div>
+                <div  class="analytics__card side-card">
+                    <i class="fas fa-shopping-basket icon icon--warning"></i>
+                  
+                    <p class="title">offline orders
+                    </p>
+                    <span class="warning">-6.8%</span>
+
+                    <span>8,410</span>
+
+                </div>
+                <div  class="analytics__card side-card">
+                    <i class="far fa-user icon icon--success"></i>
+                  
+                    <p class="title" >new customers
+                    </p>
+                    <span class="success">
+                        +17%
+                    </span>
+
+                    <span>410</span>
+
+                </div>
+
+          
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+   </main>
+
+
+
+       
+
+   
+    <script src="./script.js"></script>
+</body>
+</html>
