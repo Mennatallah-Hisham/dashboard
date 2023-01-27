@@ -145,6 +145,9 @@ p{
     color:var(--clr-dark);
 }
 /***** aside*****/
+.aside--open{
+    margin-left: 2rem;
+}
 .aside{
    
     position: sticky;
@@ -152,6 +155,7 @@ p{
     left:0;
     padding:var(--padding) 0;
     width:100%;
+   
     height: 100vh;
    
 }
